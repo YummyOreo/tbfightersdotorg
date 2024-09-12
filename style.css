@@ -271,6 +271,15 @@ img {
     padding: 0 0.15em;
     margin: 0 -0.15em;
     color: var(--bg);
+    background-size: 100% 100%;
+}
+
+.highlight-white {
+    background-image: url("img/highlight-white.svg");
+    padding: 0 0.15em;
+    margin: 0 -0.15em;
+    color: var(--fg);
+    background-size: 100% 100%;
 }
 
 .container {
@@ -813,7 +822,7 @@ input[type="checkbox"]:focus {
 }
 
 .join-left {
-    width: 40%;
+    width: 35%;
     margin-bottom: 1em;
 }
 
