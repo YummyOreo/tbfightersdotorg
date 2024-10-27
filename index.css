@@ -31,7 +31,12 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background: var(--accent-bg);
+    background: url(./img/book-texture.png);
+    /* background: var(--accent-bg); */
+    /* background-blend-mode: initial color; */
+    /* background: var(--accent-bg) url(./img/hourglass-for-pattern.svg); */
+    /* background-size: 3%; */
+    /* background-repeat: space; */
     color: var(--bg);
 }
 

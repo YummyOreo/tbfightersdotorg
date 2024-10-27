@@ -68,37 +68,13 @@
 				<div id="newsletter-wrapper">
 					<noscript>Please enable javascript to sign up for the newsletter!</noscript>
 				</div>
-				<script>
-					document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
-					<div class='list-form wrapper-columns'>
-						<div>
-							<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
-							<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
-						</div>
-						<div>
-							<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
-						</div>
-						<div>
-							<button class='button'>Sign up</button>
-						</div>
-					</div>
-					<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
-				</form>`;
-					let form = document.getElementById("newsletter-form")
-					let error = document.getElementById("error-label")
-					form.onsubmit=function(e){
-						var arr=this.elements,i=0,l=arr.length;
-						if (arr.email.value == arr.name.value) {
-							error.innerHTML = "Your name cannot be the same as your email"
-							error.style.display = "block"
-							return false
-						} else {
-							error.style.display = "none"
-						}
-					}
-				</script>
+				 <iframe src="https://embeds.beehiiv.com/8a0bd417-df5d-4b47-90e9-18fc118ad830?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
 			</div>
 			<br>
+			<br>
+			<br>
+			<div class="wrapper-full">
+			</div>
 			<hr>
 			<div class="wrapper-full">
 				<h2>More <span class="red">TBFighters</span></h2>
