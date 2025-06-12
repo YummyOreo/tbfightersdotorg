@@ -144,6 +144,25 @@
 /* ==== END OF GENERAL ==== */
 
 /* ===============
+   ACTION GENERAL
+   =============== */
+
+#action-header h2 {
+    margin: 0.2em;
+    font-size: 4.5em;
+}
+
+#action-header p {
+    font-size: 2em;
+}
+
+.wrapper-action-grid {
+    margin-top: 1.5em;
+}
+
+/* ==== END OF ACTION GENERAL ==== */
+
+/* ===============
    SOCIAL MEDIA POSTS
    =============== */
 
