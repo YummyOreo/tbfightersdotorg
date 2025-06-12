@@ -348,7 +348,8 @@
         margin: auto;
     }
 
-    .content::after, .date::before {
+    .content::after,
+    .date::before {
         display: none;
     }
 
@@ -359,6 +360,7 @@
         background: linear-gradient(90deg, var(--bg) 0%, var(--fg) 100%);
         display: block;
     }
+
     .date::after {
         content: "";
         width: 15%;
@@ -382,7 +384,8 @@
         width: 100%;
     }
 
-    .date, .content {
+    .date,
+    .content {
         flex-direction: column;
     }
 
