@@ -244,3 +244,167 @@
 }
 
 /* ==== END OF SOCIAL MEDIA POSTS ==== */
+
+
+/* ===============
+   TIMELINE
+   =============== */
+
+.wrapper-timeline {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 95%;
+    margin: auto auto;
+}
+
+.date-wrapper {
+    width: 70%;
+    height: 100%;
+}
+
+.date::before {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--bg) 0%, var(--fg) 100%);
+    display: block;
+}
+
+.date {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date .date-image {
+    width: 100%;
+    height: 100%;
+
+    border: var(--aside-border);
+    border-radius: 0.5em;
+    background: url(../img/danaher/potatoes.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date .date-inner {
+    background-color: var(--bg);
+    border: var(--aside-border);
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 0.5em 0.5em;
+}
+
+.date .date-inner span {
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-inner {
+    display: block;
+    border: 3px solid var(--fg);
+    border-radius: 0.5em;
+    padding: 20px 25px;
+    font-size: 1.2em;
+    /* box-shadow: var(--aside-shadow); */
+}
+
+.content::after {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--fg) 0%, var(--bg) 100%);
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper-timeline {
+        flex-direction: column;
+        width: 95%;
+        gap: 1em;
+    }
+
+    .date {
+        height: 8em;
+    }
+
+    .date .date-image {
+        width: 70%;
+    }
+
+    .content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .content::after, .date::before {
+        display: none;
+    }
+
+    .date::before {
+        content: "";
+        width: 15%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--bg) 0%, var(--fg) 100%);
+        display: block;
+    }
+    .date::after {
+        content: "";
+        width: 15%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--fg) 0%, var(--bg) 100%);
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 668px) {
+    .date .date-image {
+        width: 100%;
+    }
+
+    .date {
+        height: 15em;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .date, .content {
+        flex-direction: column;
+    }
+
+    .date::before {
+        content: "";
+        width: 3px;
+        height: 5em;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--fg) 100%);
+        display: block;
+    }
+
+    .date::after {
+        display: none;
+    }
+
+    .content::after {
+        content: "";
+        width: 3px;
+        height: 3em;
+        background: linear-gradient(180deg, var(--fg) 0%, var(--bg) 100%);
+        display: block;
+    }
+}
+
+/* ==== END OF TIMELINE ==== */
