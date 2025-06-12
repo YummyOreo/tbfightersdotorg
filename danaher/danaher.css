@@ -439,6 +439,10 @@
         background: linear-gradient(180deg, var(--fg) 0%, var(--bg) 100%);
         display: block;
     }
+
+    #action-header h2 {
+        font-size: 4em;
+    }
 }
 
 /* ==== END OF TIMELINE ==== */
