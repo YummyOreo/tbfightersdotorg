@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="TBFighters" />
+	<meta property="og:url" content="https://tbfighters.org" />
+	<meta property="og:type" content="website" />
+	<meta property="theme-color" content="#D7211E" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../libs/toastify/toastify.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../img/favicon/site.webmanifest">
+	<link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+	<script src="../menu.js" defer></script>
+	<script src="../libs/toastify/toastify.js"></script>
+	<!-- Variable Tags -->
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content="Gilead: Make Lenacapavir Accessible" />
+	<meta property="og:description" content="" />
+	<meta name="description" content="Tell Gilead to Make Lenacapavir Accessible" />
+	<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
+	<meta property="og:image:type" content="../image/png">
+	<meta name="twitter:card" content="summary_large_image">
+
+	<link rel="stylesheet" href="./hiv.css">
+	<script src="../libs/lottie/lottie.js"></script>
+	<script src="./hiv.js" defer></script>
+	<script src="../actions.js"></script>
+	<title>HIV and TB | TBFighters</title>
+</head>
+
+<body class="hill-day">
+	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+		<div class="wrapper-head">
+
+			<div class="page-title">
+				<a href="../index.html"><img src="../img/simplified-hourglass.png" alt="hourglass"><span
+						class="black-highlight">TB</span>Fighters</a>
+			</div>
+			<a id="hamburger-button" href="#" title="menu"></a>
+			<nav class="site-menu">
+				<ul class="active">
+					<li class="dropdown lined" id="nav-about">
+						<div>
+							<div class="mobile"></div>
+							<a href="../about.html" class="title">About Us</a><button
+								aria-label="Open menu About us" class="dropdown-button"><img
+									src="../img/icons/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="../book-club" class="title">TBReaders Bookclub</a>
+							</li>
+							<li><a href="../timeline.html" class="title">News & Timeline</a>
+							</li>
+							<li><a href= "https://store.dftba.com/collections/tbfighters" target="_blank" class="title">Merch</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown lined" id="nav-learn-more">
+						<div>
+							<div class="mobile"></div>
+							<a class="title" href="../resources.html">About TB</a><button
+								aria-label="Open menu Take Action" class="dropdown-button"><img
+									src="../img/icons/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="../tb-ed-talks/" class="title">TB Ed Talks</a></li>
+						</ul>
+					</li>
+					<li class="dropdown lined" id="nav-take-action">
+						<div>
+							<div class="mobile"></div>
+							<a class="title" href="../action.html">Take Action</a><button
+								aria-label="Open menu Take Action" class="dropdown-button"><img
+									src="../img/icons/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="../hill-day/" class="title">US Hill Day</a></li>
+							<li><a href="../hiv/" class="title">HIV Prevention</a></li>
+							<li><a href="../funding-cuts/" class="title">Funding Cuts</a></li>
+							<li><a href="../templates/" class="title">Templates</a></li>
+						</ul>
+					</li>
+					<li class="non-dropdown socials" id="nav-socials">
+						<p class="socials-wrapper">
+							<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+									src="../img/socials/newsletter-nav.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+									src="../img/socials/newsletter-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+									src="../img/socials/bsky-nav.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+									src="../img/socials/bsky-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.instagram.com/tbfighters" target="_blank"><img
+									src="../img/socials/insta-nav.svg" alt="Instagram" aria-label="Instagram" class="social-icon"><img
+									src="../img/socials/insta-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+									src="../img/socials/youtube-nav.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+									src="../img/socials/youtube-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						</p>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<main id="main">
+		<section id="hero" class="container">
+			<h1>TB Is The <span class="red">#1 Killer</span> Of People With HIV</h1>
+			<div class="buttons larger">
+				<a href="#action" class="button">Take action</a>
+				<a href="#learn-more" class="button button-subtle">Learn more</a>
+			</div>
+		</section>
+		<section class="container" id="learn-more">
+			<div class="wrapper">
+				<h2>People with HIV are <span class="yellow-highlight">18 times</span> more likely to develop active TB</h2>
+				<div class="split">
+					<p>Because people living with HIV have a weakened immune system, latent TB is more likely to develop into active TB. Active TB is <b>deadlier</b> for people with weakened immune systems.</p>
+					<div class="animation">
+						<div id="immune-cells" aria-label="Animation of immune cells becoming grey and slow."><noscript><img src="../img/hiv/immune-cells-thumbnail.svg" alt=""></noscript></div>
+						<div class="controls"><button id="immune-cells-control" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<h2>HIV/AIDS contributes to <span class="red">15% of all TB deaths</span> worldwide</h2>
+				<div class="split">
+					<div class="animation">
+						<div id="world" aria-label="Animation of 15% of the world becoming red."><noscript><img src="../img/hiv/world-thumbnail.svg" alt=""></noscript></div>
+						<div class="controls"><button id="world-control" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
+					</div>
+
+					<div>
+						<p>Fewer HIV infections means that</p>
+						<ul>
+							<li>Fewer people with inactive TB will get sick with active TB, and </li>
+							<li>Fewer people with active TB will die of TB.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="statement">
+			<div class="wrapper">
+				<p>We Can Make Change!</p>
+			</div>
+		</section>
+		<section class="container" id="action">
+			<article class="wrapper">
+				<h2>2 Shots, 40 Dollars, Everywhere</h2>
+				<p>Lenacapavir is a new injectable drug made by Gilead that is highly effective at both treating and preventing HIV.</p>
+				<p>Gilead recently struck a deal with The Global Fund to provide Lenacapavir for 3 million people by 2028. This deal is incredible, and it will save a lot of lives. But it also leaves out many lower- and middle-income countries where HIV is on the rise and tuberculosis is more prevalent.</p>
+				<p>To fill that gap, Doctors Without Borders (M&#233;decins Sans Fronti&#232;res/MSF) tried to buy Lenacapavir from Gilead directly, <strong>but Gilead refused.</strong></p>
+				<h3 class="centered">Gilead is for everyone, everywhere... except</h3>
+			</article>
+			<article id="countries">
+				<div class="row" id="top">
+					<div class="inner first">
+						<div class="country split">
+							<img src="../img/hiv/countries/iran.svg" alt="">
+							<div>
+								<b>Iran</b>
+								<p>40,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/iraq.svg" alt="">
+							<div>
+								<b>Iraq</b>
+								<p>3,400 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/peru.svg" alt="">
+							<div>
+								<b>Peru</b>
+								<p>130,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/china.svg" alt="">
+							<div>
+								<b>China</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/bosnia.svg" alt="">
+							<div>
+								<b>Bosnia and Herzegovina</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/brazil.svg" alt="">
+							<div>
+								<b>Brazil</b>
+								<p>1,100,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/jordan.svg" alt="">
+							<div>
+								<b>Jordan</b>
+								<p>680 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/kosovo.svg" alt="">
+							<div>
+								<b>Kosovo</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/mexico.svg" alt="">
+							<div>
+								<b>Mexico</b>
+								<p>400,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/serbia.svg" alt="">
+							<div>
+								<b>Serbia</b>
+								<p>4,100 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/albania.svg" alt="">
+							<div>
+								<b>Albania</b>
+								<p>1,600 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/algeria.svg" alt="">
+							<div>
+								<b>Algeria</b>
+								<p>30,000 people denied</p>
+							</div>
+						</div>
+					</div>
+					<div class="inner second">
+						<div class="country split">
+							<img src="../img/hiv/countries/iran.svg" alt="">
+							<div>
+								<b>Iran</b>
+								<p>40,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/iraq.svg" alt="">
+							<div>
+								<b>Iraq</b>
+								<p>3,400 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/peru.svg" alt="">
+							<div>
+								<b>Peru</b>
+								<p>130,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/china.svg" alt="">
+							<div>
+								<b>China</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/bosnia.svg" alt="">
+							<div>
+								<b>Bosnia and Herzegovina</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/brazil.svg" alt="">
+							<div>
+								<b>Brazil</b>
+								<p>1,100,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/jordan.svg" alt="">
+							<div>
+								<b>Jordan</b>
+								<p>680 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/kosovo.svg" alt="">
+							<div>
+								<b>Kosovo</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/mexico.svg" alt="">
+							<div>
+								<b>Mexico</b>
+								<p>400,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/serbia.svg" alt="">
+							<div>
+								<b>Serbia</b>
+								<p>4,100 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/albania.svg" alt="">
+							<div>
+								<b>Albania</b>
+								<p>1,600 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/algeria.svg" alt="">
+							<div>
+								<b>Algeria</b>
+								<p>30,000 people denied</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="btm">
+					<div class="inner first">
+						<div class="country split">
+							<img src="../img/hiv/countries/ecuador.svg" alt="">
+							<div>
+								<b>Ecuador</b>
+								<p>52,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/lebanon.svg" alt="">
+							<div>
+								<b>Lebanon</b>
+								<p>3000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/turkiye.svg" alt="">
+							<div>
+								<b>Türkiye</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/columbia.svg" alt="">
+							<div>
+								<b>Columbia</b>
+								<p>230,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/malaysia.svg" alt="">
+							<div>
+								<b>Malaysia</b>
+								<p>84,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/paraguay.svg" alt="">
+							<div>
+								<b>Paraguay</b>
+								<p>23,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/argentina.svg" alt="">
+							<div>
+								<b>Argentina</b>
+								<p>140,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/guatemala.svg" alt="">
+							<div>
+								<b>Guatemala</b>
+								<p>33,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/palestine.svg" alt="">
+							<div>
+								<b>Palestine</b>
+								<p>125 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/venezuela.svg" alt="">
+							<div>
+								<b>Venezuela</b>
+								<p>110,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/costa rica.svg" alt="">
+							<div>
+								<b>Costa Rica</b>
+								<p>21,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/montenegro.svg" alt="">
+							<div>
+								<b>Montenegro</b>
+								<p>500 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/el salvador.svg" alt="">
+							<div>
+								<b>El Salvador</b>
+								<p>21,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/north macedonia.svg" alt="">
+							<div>
+								<b>North Macedonia</b>
+								<p>740 people denied</p>
+							</div>
+						</div>
+					</div>
+					<div class="inner second">
+						<div class="country split">
+							<img src="../img/hiv/countries/ecuador.svg" alt="">
+							<div>
+								<b>Ecuador</b>
+								<p>52,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/lebanon.svg" alt="">
+							<div>
+								<b>Lebanon</b>
+								<p>3000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/turkiye.svg" alt="">
+							<div>
+								<b>Türkiye</b>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/columbia.svg" alt="">
+							<div>
+								<b>Columbia</b>
+								<p>230,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/malaysia.svg" alt="">
+							<div>
+								<b>Malaysia</b>
+								<p>84,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/paraguay.svg" alt="">
+							<div>
+								<b>Paraguay</b>
+								<p>23,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/argentina.svg" alt="">
+							<div>
+								<b>Argentina</b>
+								<p>140,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/guatemala.svg" alt="">
+							<div>
+								<b>Guatemala</b>
+								<p>33,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/palestine.svg" alt="">
+							<div>
+								<b>Palestine</b>
+								<p>125 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/venezuela.svg" alt="">
+							<div>
+								<b>Venezuela</b>
+								<p>110,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/costa rica.svg" alt="">
+							<div>
+								<b>Costa Rica</b>
+								<p>21,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/montenegro.svg" alt="">
+							<div>
+								<b>Montenegro</b>
+								<p>500 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/el salvador.svg" alt="">
+							<div>
+								<b>El Salvador</b>
+								<p>21,000 people denied</p>
+							</div>
+						</div>
+						<div class="country split">
+							<img src="../img/hiv/countries/north macedonia.svg" alt="">
+							<div>
+								<b>North Macedonia</b>
+								<p>740 people denied</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="controls"><button id="loop-controls" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
+				<br>
+			</article>
+			<article class="wrapper">
+				<p class="larger"><b>We stand with MSF in calling for Gilead to make Lenacapavir available to all.</b></p>
+				<h3 style="margin-bottom: 0;">Learn more</h3>
+				<div class="buttons smaller">
+					<a href="https://www.doctorswithoutborders.org/access-to-LEN" class="button button-subtle" target="_blank">MSF Campaign Page</a>
+					<a href="https://en.wikipedia.org/wiki/Lenacapavir" class="button button-subtle" target="_blank">Learn more about Lenacapavir</a>
+				</div>
+			</article>
+			<article>
+				<h3 class="action">Take Action</h3>
+				<div class="wrapper wrap-centered">
+					<h4>Contact Gilead</h4>
+				</div>
+				<div class="wrapper-full wrapper-action-grid">
+					<div class="action">
+						<p class="larger">
+							<img src="../img/icons/envelope.svg" alt="email icon"
+								class="icon" /><strong><span class="red">Email</span></strong>
+							Gilead's Leadership
+						</p>
+						<p class="smaller">
+							<a href="mailto:public_affairs@gilead.com" target="_blank">public_affairs@gilead.com</a>
+						</p>
+						<p class="smaller">
+							<a href="mailto:investor_relations@gilead.com" target="_blank">investor_relations@gilead.com</a>
+						</p>
+						<p class="smaller">
+							<a class="button" href="https://docs.google.com/document/d/e/2PACX-1vSHhdIqg4TL46fG13JTvsQAqdAzAFNfl2GUVJ6Xnu9Ihivkrw4tJ7eArvDqh_5sQoBRcYe6rgq_gReb/pub" target="_blank">Email
+								templates</a>
+						</p>
+					</div>
+					<div class="action">
+						<p class="larger">
+							<img src="../img/icons/phone.svg" alt="phone icon"
+								class="icon" /><strong><span class="red">Call</span></strong>
+							Gilead
+						</p>
+						<p class="smaller">
+							US Phone Number: <a href="tel:+18004453235">1-800-GILEAD-5 (1-800-445-3235)</a>
+						</p>
+						<p class="smaller">
+							<a class="button" target="_blank"
+								href="https://docs.google.com/document/d/e/2PACX-1vSC7u4t_a5KZ9PDV9DVNoeeNt1pifrsZS2lwbgTaVWHZLIDXwzlOfryxBkyXXdD2s_zoylIfNpLEhvb/pub">Templates and
+								international numbers</a>
+						</p>
+					</div>
+					<div class="action full">
+						<p class="larger">
+							<img src="../img/icons/envelopes-bulk.svg" alt="several envelopes icon"
+								class="icon" /><strong><span class="red">Write</span></strong> a
+							letter to Gilead
+						</p>
+						<aside class="address-block">
+							<p class="smaller">
+								Gilead Sciences<br>
+								333 Lakeside Drive<br>
+								Foster City, CA 94404
+							</p>
+						</aside>
+						<p class="smaller">
+							<a class="button"
+								href="https://docs.google.com/document/d/e/2PACX-1vSHhdIqg4TL46fG13JTvsQAqdAzAFNfl2GUVJ6Xnu9Ihivkrw4tJ7eArvDqh_5sQoBRcYe6rgq_gReb/pub" target="_blank">Letter templates</a>
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="wrapper">
+				<div class="wrap-centered">
+					<h4>Spread the word</h4>
+				</div>
+				<p>Spread the word using the resources below:</p>
+				<a href="../img/hiv/lenacapavir zine.pdf" target="_blank" class="button resource"><img src="../img/icons/book-black.svg" alt="book icon " class="icon">Lenacapavir zine</a>
+				<a href="https://docs.google.com/document/d/1Tzr5jm_Rzn1mv9BrlYelQDyam-fVFZ6Xj9zTfxE4-tw/edit?tab=t.50ljpjv25ze1" target="_blank" class="button resource"><img src="../img/icons/paper.svg" alt="paper icon " class="icon">Lenacapavir fliers</a>
+			</article>
+		</section>
+	</main>
+	<footer class="site-foot">
+			<p class="socials-wrapper-centered socials-wrapper">
+				<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+					src="../img/socials/newsletter.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+					src="../img/socials/newsletter-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+					src="../img/socials/bsky.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+					src="../img/socials/bsky-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://x.com/tbfighters" target="_blank"><img
+					src="../img/socials/twitter.svg" alt="Twitter" aria-label="Twitter" class="social-icon"><img
+					src="../img/socials/twitter-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.instagram.com/tbfighters" target="_blank">
+					<img src="../img/socials/insta.svg" alt="Instagram" aria-label="Instagram" class="social-icon">
+					<img src="../img/socials/insta-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+					src="../img/socials/youtube.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+					src="../img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+					src="../img/socials/facebook.svg" alt="Facebook" aria-label="Facebook" class="social-icon"><img
+					src="../img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+			</p>
+			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+			<p>
+			&copy; The TBFighters Project | <a href="../privacy.html" class="footer-link">Privacy Policy</a>
+			</p>
+			<p class="too-small">
+
+				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+			</p>
+		</footer>
+</body>
+
+</html>
