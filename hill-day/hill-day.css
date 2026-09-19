@@ -141,6 +141,53 @@ section {
     margin: 1rem auto 4rem;
 }
 
+/* Recap */
+
+#recap {
+    overflow-x: clip;
+    overflow-y: visible;
+    padding: 0;
+}
+
+#recap h2 {
+    text-align: center;
+}
+
+#recap img {
+    border: solid var(--bg) 5px;
+    box-shadow: -0.2em 0.2em 0.5em rgb(10 10 10 / 35%);
+}
+
+#recap .wrapper-images {
+    width: 99.9%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.wrapper-images img {
+  flex-shrink: 1;
+  height: auto;
+  flex-grow: 1;
+  max-width: 60vw;
+}
+
+.wrapper-images img:nth-child(1) {
+    transform: rotate(-5.5deg);
+}
+
+.wrapper-images img:nth-child(2) {
+    transform: rotate(4deg);
+}
+
+.wrapper-images img:nth-child(3) {
+    transform: rotate(-3deg);
+}
+
 /* About */
 
 #about img {
@@ -257,12 +304,14 @@ h3.red-highlight {
 
 @media only screen and (max-width: 992px) {
     /* General */
-    .quote {
-        padding-top: 3rem;
+    blockquote {
+	font-size: 1.5rem;
+	line-height: 1.7rem;
     }
 
-    .quote p {
-        width: 90%;
+    blockquote strong {
+	font-size: 2rem;
+	line-height: 2.2rem;
     }
 
     /* Hero */
@@ -295,6 +344,16 @@ h3.red-highlight {
 
     #hill-day .image-split {
         width: 30%;
+    }
+
+    /* Recap */
+    .wrapper-images {
+	align-items: center;
+	justify-content: center;
+    }
+
+    .wrapper-images img:nth-child(3) {
+	display: none;
     }
 
     /* About */
@@ -344,6 +403,14 @@ h3.red-highlight {
 @media only screen and (max-width: 650px) {
     #hero {
 	width: 100%;
+    }
+
+    .wrapper-images img {
+	max-width: 90vw;
+    }
+
+    .wrapper-images img:nth-child(2) {
+	display: none;
     }
 
     .wrapper-full {
